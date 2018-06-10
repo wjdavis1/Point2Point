@@ -1,0 +1,8 @@
+/bin/
+.classpath
+memoranda.bat
+memoranda.sh
+memoranda_swexpl.sh
+/docs/
+LICENSE
+*.docx
