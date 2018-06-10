@@ -6,3 +6,6 @@ memoranda_swexpl.sh
 /docs/
 LICENSE
 *.docx
+.idea/
+out/
+Point2PointProject.iml
