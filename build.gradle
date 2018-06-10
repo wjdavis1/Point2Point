@@ -1,0 +1,173 @@
+apply plugin: 'application'
+
+///////////////////////////////////////////////////////////////////////////
+// Definint Main class
+///////////////////////////////////////////////////////////////////////////
+//sourceSets {
+        //main.java.srcDirs = ['src.main.java.memoranda']
+        //main.resources.srcDirs = ['src/net/sf/memoranda/ui/']
+//}
+
+mainClassName = 'main/java/memoranda/Start'
+
+compileJava.options.encoding = 'UTF-8'
+///////////////////////////////////////////////////////////////////////////
+// Repositories and dependencies for code go here
+///////////////////////////////////////////////////////////////////////////
+repositories {
+  mavenCentral()
+}
+
+
+///////////////////////////////////////////////////////////////////////////
+// JUnit 5 include
+///////////////////////////////////////////////////////////////////////////
+
+buildscript {
+    repositories {
+    	maven {
+      		url "https://plugins.gradle.org/m2/"
+   		}
+    }
+    dependencies {
+        classpath ("org.junit.platform:junit-platform-gradle-plugin:1.0.0-M4")
+        classpath "gradle.plugin.com.github.spotbugs:spotbugs-gradle-plugin:1.6.1"
+        
+    }
+}
+
+apply plugin: 'org.junit.platform.gradle.plugin'
+
+
+
+dependencies {
+    // in case JUnit 4 is also needed/wanted
+    compile("junit:junit:4.12")
+    testRuntime("org.junit.vintage:junit-vintage-engine:4.12.0-M4")
+
+    testCompile("org.junit.jupiter:junit-jupiter-api:5.0.0-M4")
+    testRuntime("org.junit.jupiter:junit-jupiter-engine:5.0.0-M4")
+
+    // Enable use of the JUnitPlatform Runner within the IDE
+    testCompile("org.junit.platform:junit-platform-runner:1.0.0-M4")
+    
+    compile 'com.io7m.xom:xom:1.2.+'
+    compile 'net.sourceforge.nekohtml:nekohtml:1.9.+'
+    compile 'org.json:json:20180130'
+    compile 'org.jfree:jfreechart:1.0.19'
+}
+
+junitPlatform {
+    details 'tree'
+}
+
+
+apply plugin: 'jacoco'
+
+afterEvaluate {
+    def junitPlatformTestTask = (JavaExec) project.tasks.getByName('junitPlatformTest')
+
+    jacoco {
+        applyTo(junitPlatformTestTask)
+    }
+
+    project.task(type: JacocoReport, "jacocoJupTestReport") {
+        executionData(junitPlatformTestTask)
+        sourceSets(sourceSets.main)
+        sourceDirectories = files(sourceSets.main.allSource.srcDirs)
+        classDirectories = files(sourceSets.main.output)
+
+        reports {
+            xml.enabled true
+            xml.destination file("${buildDir}/jacoco/report.xml")
+            html.enabled true
+            html.destination file("${buildDir}/jacoco/html")
+        }
+    }
+
+    check.dependsOn jacocoJupTestReport
+}
+configurations {
+    junitXmlToHtml
+}
+
+task generateHtmlTestReports << {
+    def reportsDir = new File(buildDir, 'test-reports')
+    reportsDir.mkdirs()
+
+    ant.taskdef(
+        name: 'junitReport',
+        classname: 'org.apache.tools.ant.taskdefs.optional.junit.XMLResultAggregator',
+        classpath: configurations.junitXmlToHtml.asPath
+    )
+
+    ant.junitReport(todir: "$buildDir/test-results/junit-platform", tofile: "aggregated-test-results.xml") {
+        fileset(dir: "$buildDir/test-results/junit-platform")
+        report(format: 'frames', todir: reportsDir)
+    }
+}
+
+afterEvaluate {
+    def junitPlatformTestTask = tasks.getByName('junitPlatformTest')
+    generateHtmlTestReports.dependsOn(junitPlatformTestTask)
+    check.dependsOn(generateHtmlTestReports)
+}
+
+dependencies {
+    // configure as normal ...
+
+    junitXmlToHtml 'org.apache.ant:ant-junit:1.9.7'
+}
+
+///////////////////////////////////////////////////////////////////////////
+// SpotBugs include
+///////////////////////////////////////////////////////////////////////////
+
+apply plugin: "com.github.spotbugs"
+
+spotbugs {
+  sourceSets = []
+  ignoreFailures = true
+}
+// To generate an HTML report instead of XML
+tasks.withType(com.github.spotbugs.SpotBugsTask) {
+  reports {
+    xml.enabled = false
+    html.enabled = true
+  }
+}
+
+
+
+///////////////////////////////////////////////////////////////////////////
+// Checkstyle include
+///////////////////////////////////////////////////////////////////////////
+apply plugin: 'checkstyle'
+checkstyle {
+    toolVersion '7.8.1'
+    configFile file("config/checkstyle/checkstyle.xml")
+	sourceSets = []
+}
+checkstyleMain {
+    source ='src/main/java'
+}
+checkstyleTest {
+    source ='src/test/java'
+}
+
+tasks.withType(Checkstyle) {
+    reports {
+        xml.enabled false
+        html.enabled true
+    }
+}
+
+///////////////////////////////////////////////////////////////////////////
+// Run all checks
+///////////////////////////////////////////////////////////////////////////
+task runchecks {
+	dependsOn 'spotbugsMain'
+	dependsOn 'spotbugsTest'
+	dependsOn 'checkstyleMain'
+	dependsOn 'checkstyleTest'
+}

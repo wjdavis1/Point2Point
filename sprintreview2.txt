@@ -1,0 +1,16 @@
+Sprint 2 Review Notes
+
+Sprint Goals:
+Make sure that it is concise, and within one sentence. Don’t use SHOULD use SHALL. Shall is a guarantee.
+
+Quality Practices:
+At the top, but what policies on what you want, these policies should be used throughout the course not just the sprint.
+
+Sprint 2 ScrumBoard:
+Going forward, you will have to start working with someone on the same US. Work with team members on making sure that each US is worked with together, besides individually working on US.
+
+Git:
+Incorporate unit tests into the user story
+
+Git Commits:
+Commit more, no BS make sure that commits have content.
