@@ -331,7 +331,7 @@ public class NotesControlPanel extends JPanel {
 	ppSetEnabled();
         notesList.updateUI();
 	notesList.clearSelection();
-	((AppFrame)App.getFrame()).workPanel.dailyItemsPanel.editorPanel.editor.requestFocus();	
+	((AppFrame)App.getFrame()).getWorkPanel().dailyItemsPanel.editorPanel.editor.requestFocus();
     }
 
     void ppSetEnabled() {

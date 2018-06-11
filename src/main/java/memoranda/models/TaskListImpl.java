@@ -16,7 +16,6 @@ import java.util.Vector;
 import main.java.interfaces.Project;
 import main.java.interfaces.Task;
 import main.java.interfaces.TaskList;
-import main.java.memoranda.TaskImpl;
 import main.java.memoranda.date.CalendarDate;
 import main.java.memoranda.util.Util;
 import nu.xom.Attribute;
