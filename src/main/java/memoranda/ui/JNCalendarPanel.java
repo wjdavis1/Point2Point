@@ -25,7 +25,7 @@ import javax.swing.border.Border;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
-import main.java.memoranda.CurrentProject;
+import main.java.memoranda.models.CurrentProject;
 import main.java.interfaces.NoteList;
 import main.java.interfaces.Project;
 import main.java.interfaces.ProjectListener;

@@ -7,6 +7,8 @@
  * Copyright (c) 2003 Memoranda Team. http://memoranda.sf.net
  */
 package main.java.memoranda.util;
+import main.java.interfaces.Storage;
+
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.Collection;

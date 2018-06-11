@@ -25,8 +25,8 @@ import javax.swing.JToolBar;
 import javax.swing.UIManager;
 import javax.swing.text.html.HTMLDocument;
 
-import main.java.memoranda.CurrentNote;
-import main.java.memoranda.History;
+import main.java.memoranda.models.CurrentNote;
+import main.java.memoranda.models.History;
 import main.java.interfaces.Note;
 import main.java.memoranda.date.CurrentDate;
 import main.java.memoranda.ui.htmleditor.HTMLEditor;

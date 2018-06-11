@@ -1,42 +1,20 @@
 package main.java.memoranda.ui;
 
 import java.awt.BorderLayout;
-import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Point;
 import java.awt.event.ActionEvent;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
-import java.awt.event.KeyListener;
-import java.awt.event.KeyEvent;
-import java.io.File;
 
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JMenuItem;
-import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JPopupMenu;
 import javax.swing.JScrollPane;
 import javax.swing.JSplitPane;
 import javax.swing.JToolBar;
-import javax.swing.event.ListSelectionEvent;
-import javax.swing.event.ListSelectionListener;
-
-import main.java.memoranda.CurrentProject;
-import main.java.memoranda.Resource;
-import main.java.memoranda.util.AppList;
-import main.java.memoranda.util.CurrentStorage;
-import main.java.memoranda.util.Local;
-import main.java.memoranda.util.MimeType;
-import main.java.memoranda.util.MimeTypesList;
-import main.java.memoranda.util.Util;
-
-import org.json.*;
-
-import javafx.scene.control.SplitPane;
-
-import java.io.*;
 
 /*BusesPanel 
  * AUTHOR: TRESOR CYUBAHIRO

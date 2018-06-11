@@ -38,10 +38,10 @@ import javax.swing.table.*;
 import javax.swing.tree.*;
 
 import main.java.interfaces.*;
-import main.java.memoranda.*;
 import main.java.memoranda.date.CalendarDate;
 import main.java.memoranda.date.CurrentDate;
-import main.java.memoranda.date.DateListener;
+import main.java.interfaces.DateListener;
+import main.java.memoranda.models.CurrentProject;
 import main.java.memoranda.ui.treetable.*;
 import main.java.memoranda.util.*;
 

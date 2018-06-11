@@ -21,7 +21,7 @@ import javax.swing.border.TitledBorder;
 import javax.swing.event.CaretEvent;
 import javax.swing.text.Document;
 
-import main.java.memoranda.CurrentProject;
+import main.java.memoranda.models.CurrentProject;
 import main.java.interfaces.Note;
 import main.java.interfaces.NoteList;
 import main.java.interfaces.Project;

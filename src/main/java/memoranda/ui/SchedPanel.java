@@ -10,12 +10,8 @@ package main.java.memoranda.ui;
 import javax.swing.JPanel; 
 import javax.swing.JOptionPane;
 import javax.swing.JSplitPane;
-import javax.swing.JTextField;
 import javax.swing.JToolBar;
-import javax.swing.SwingConstants;
 import javax.swing.JButton;
-import javax.swing.JFrame;
-import javax.swing.JLabel;
 import javax.swing.ImageIcon;
 
 import java.awt.BorderLayout;
@@ -26,21 +22,12 @@ import java.awt.Dimension;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.util.Calendar;
 
-import main.java.memoranda.ui.TourTable;
-import main.java.memoranda.TourImpl;
+import main.java.memoranda.models.TourImpl;
 import main.java.memoranda.util.Local;
-import main.java.memoranda.CurrentProject;
-import main.java.memoranda.History;
-import main.java.memoranda.HistoryItem;
-import main.java.memoranda.TourCollection;
+import main.java.memoranda.models.TourCollection;
 import main.java.memoranda.date.CalendarDate;
 import main.java.memoranda.date.CurrentDate;
-import main.java.memoranda.date.DateListener;
-import main.java.memoranda.ui.EditTourPanel;
-import main.java.memoranda.DriverCollection;
-import main.java.memoranda.BusImpl;
 
 public class SchedPanel extends JPanel {
     

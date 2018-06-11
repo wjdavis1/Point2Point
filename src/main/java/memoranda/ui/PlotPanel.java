@@ -12,7 +12,6 @@ package main.java.memoranda.ui;
  * implementation found in the source above. 
  */
 import java.awt.*;
-import java.awt.event.*;
 import java.awt.font.*;
 import java.awt.geom.*;
 
@@ -25,10 +24,10 @@ import java.util.List;
 import java.util.ArrayList;
 import java.util.LinkedList;
 
-import main.java.memoranda.NodeImpl;
-import main.java.memoranda.NodeCollection;
-import main.java.memoranda.NodeEdge;
-import main.java.memoranda.DijkstraAlgorithm;
+import main.java.memoranda.models.NodeImpl;
+import main.java.memoranda.models.NodeCollection;
+import main.java.memoranda.models.NodeEdge;
+import main.java.memoranda.models.DijkstraAlgorithm;
 
 public class PlotPanel extends JPanel {
     

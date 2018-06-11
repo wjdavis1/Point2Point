@@ -5,8 +5,8 @@ import javax.swing.table.*;
 
 import main.java.interfaces.Project;
 import main.java.interfaces.Task;
-import main.java.memoranda.*;
 import main.java.memoranda.date.*;
+import main.java.memoranda.models.CurrentProject;
 
 import java.awt.*;
 import java.awt.event.*;

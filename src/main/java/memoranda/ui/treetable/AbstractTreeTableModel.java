@@ -13,6 +13,8 @@ package main.java.memoranda.ui.treetable;
  * you entered into with Sun.
  */
 
+import main.java.interfaces.TreeTableModel;
+
 import javax.swing.tree.*;
 import javax.swing.event.*;
  

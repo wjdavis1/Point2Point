@@ -10,7 +10,7 @@ import javax.swing.JTable;
 import java.util.List;
 
 
-import main.java.memoranda.NodeImpl;
+import main.java.memoranda.models.NodeImpl;
 
 
 public class NodeCoordinateTable extends JPanel {

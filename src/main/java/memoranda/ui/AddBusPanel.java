@@ -11,7 +11,7 @@ import javax.swing.JPanel;
 import javax.swing.JLabel;
 import javax.swing.SwingConstants;
 
-import main.java.memoranda.BusImpl;
+import main.java.memoranda.models.BusImpl;
 
 import javax.swing.JTextField;
 import javax.swing.JButton;

@@ -13,10 +13,10 @@ import java.awt.event.*;
 import java.io.IOException;
 import java.text.DecimalFormat;
 
-import main.java.memoranda.RouteImpl;
-import main.java.memoranda.RouteCollection;
+import main.java.memoranda.models.RouteImpl;
+import main.java.memoranda.models.RouteCollection;
 import java.util.Set;
-import main.java.memoranda.NodeImpl;
+import main.java.memoranda.models.NodeImpl;
 
 /**
  * Class: AddRoutePanel Description: SEE ABOVE FILE DESCRIPTION

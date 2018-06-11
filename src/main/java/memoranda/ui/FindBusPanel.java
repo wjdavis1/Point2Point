@@ -9,9 +9,8 @@ package main.java.memoranda.ui;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
-import main.java.memoranda.BusImpl;
-import main.java.memoranda.BusCollection;
-import java.io.IOException;
+import main.java.memoranda.models.BusImpl;
+import main.java.memoranda.models.BusCollection;
 
 public class FindBusPanel extends JFrame {
 	

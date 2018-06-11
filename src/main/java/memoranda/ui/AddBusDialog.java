@@ -4,7 +4,6 @@ import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.FlowLayout;
-import java.awt.Frame;
 import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
 import java.awt.Insets;
@@ -23,9 +22,8 @@ import javax.swing.event.CaretEvent;
 
 
 
-import main.java.memoranda.BusCollection;
-import main.java.memoranda.BusImpl;
-import main.java.memoranda.ui.BusesPanel;
+import main.java.memoranda.models.BusCollection;
+import main.java.memoranda.models.BusImpl;
 import main.java.memoranda.util.Local;
 
 /*

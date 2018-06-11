@@ -10,7 +10,7 @@ package main.java.interfaces;
 
 import java.util.Vector;
 
-import main.java.memoranda.Resource;
+import main.java.memoranda.models.Resource;
 import nu.xom.Document;
 /**
  * 

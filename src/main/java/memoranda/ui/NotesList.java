@@ -13,8 +13,8 @@ import javax.swing.JList;
 import javax.swing.ListCellRenderer;
 import javax.swing.ListSelectionModel;
 
-import main.java.memoranda.CurrentNote;
-import main.java.memoranda.CurrentProject;
+import main.java.memoranda.models.CurrentNote;
+import main.java.memoranda.models.CurrentProject;
 import main.java.interfaces.Note;
 import main.java.interfaces.NoteList;
 import main.java.interfaces.NoteListener;
@@ -24,7 +24,7 @@ import main.java.interfaces.ResourcesList;
 import main.java.interfaces.TaskList;
 import main.java.memoranda.date.CalendarDate;
 import main.java.memoranda.date.CurrentDate;
-import main.java.memoranda.date.DateListener;
+import main.java.interfaces.DateListener;
 import main.java.memoranda.util.Configuration;
 
 /*$Id: NotesList.java,v 1.9 2005/05/05 16:19:16 ivanrise Exp $*/

@@ -9,7 +9,7 @@ import java.util.Iterator;
 import java.util.Vector;
 
 import main.java.interfaces.Project;
-import main.java.memoranda.ProjectManager;
+import main.java.memoranda.models.ProjectManager;
 import nu.xom.Attribute;
 import nu.xom.DocType;
 import nu.xom.Document;

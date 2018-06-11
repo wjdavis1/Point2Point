@@ -2,7 +2,7 @@ package main.java.interfaces;
 
 import java.util.List;
 
-import main.java.memoranda.NodeImpl;
+import main.java.memoranda.models.NodeImpl;
 import org.json.JSONObject;
 
 /**

@@ -7,6 +7,8 @@
  * Copyright (c) 2003 Memoranda Team. http://memoranda.sf.net
  */
 package main.java.memoranda.date;
+import main.java.interfaces.DateListener;
+
 import java.util.Collection;
 import java.util.Vector;
 

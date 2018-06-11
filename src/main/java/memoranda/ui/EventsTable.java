@@ -18,10 +18,10 @@ import javax.swing.table.AbstractTableModel;
 import javax.swing.table.TableCellRenderer;
 
 import main.java.interfaces.Event;
-import main.java.memoranda.EventsManager;
+import main.java.memoranda.models.EventsManager;
 import main.java.memoranda.date.CalendarDate;
 import main.java.memoranda.date.CurrentDate;
-import main.java.memoranda.date.DateListener;
+import main.java.interfaces.DateListener;
 import main.java.memoranda.util.Local;
 /**
  *

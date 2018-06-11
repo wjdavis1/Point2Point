@@ -19,7 +19,7 @@ import java.awt.Dimension;
 
 import java.util.HashMap;
 
-import main.java.memoranda.RouteCollection;
+import main.java.memoranda.models.RouteCollection;
 import main.java.interfaces.Route;
 
 public class RouteTable extends JPanel {

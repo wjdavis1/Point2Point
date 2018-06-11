@@ -6,24 +6,19 @@ package main.java.memoranda.ui;
  * Date: February 22, 2018
  * 
  */
-import main.java.memoranda.TourCollection;
-import main.java.memoranda.TourImpl;
+import main.java.memoranda.models.TourCollection;
+import main.java.memoranda.models.TourImpl;
 
 import javax.swing.table.AbstractTableModel;
-import javax.swing.table.DefaultTableModel;
 import javax.swing.JTable;
 import javax.swing.ScrollPaneConstants;
-import javax.swing.table.JTableHeader;
-import javax.swing.JTable;
 
 import java.awt.Color;
 import java.awt.Dimension;
-import java.awt.GridLayout;
 
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 
-import main.java.memoranda.TourCollection;
 public class TourTable extends JPanel {
 	
 	JTable tourTable; 

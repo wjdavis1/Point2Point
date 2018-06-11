@@ -29,12 +29,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 
-import main.java.memoranda.NodeImpl;
-import main.java.memoranda.NodeCollection;
-import main.java.memoranda.NodeEdge;
-import main.java.memoranda.RefactoredDjkAlgo;
-import main.java.memoranda.DJKAGraph;
-import main.java.memoranda.DijkstraAlgorithm;
+import main.java.memoranda.models.NodeImpl;
+import main.java.memoranda.models.RefactoredDjkAlgo;
+import main.java.memoranda.models.DJKAGraph;
 
 import org.jfree.chart.ChartPanel; 
 import org.jfree.chart.JFreeChart;

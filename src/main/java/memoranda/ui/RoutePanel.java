@@ -15,11 +15,8 @@ import java.io.FileInputStream;
 import java.io.IOException;
 
 import javax.swing.*;
-import javax.swing.filechooser.*;
 
-import main.java.memoranda.RouteImpl;
-
-import main.java.memoranda.RouteCollection;
+import main.java.memoranda.models.RouteCollection;
 import org.json.*;
 
 /**

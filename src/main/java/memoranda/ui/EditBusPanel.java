@@ -7,9 +7,7 @@ package main.java.memoranda.ui;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
-import main.java.memoranda.BusCollection;
-import main.java.memoranda.BusCollection;
-import java.io.IOException;
+import main.java.memoranda.models.BusCollection;
 
 public class EditBusPanel extends JFrame {
     

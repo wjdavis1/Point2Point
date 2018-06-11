@@ -28,9 +28,9 @@ import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
-import main.java.memoranda.DJKAGraph;
-import main.java.memoranda.NodeImpl;
-import main.java.memoranda.RefactoredDjkAlgo;
+import main.java.memoranda.models.DJKAGraph;
+import main.java.memoranda.models.NodeImpl;
+import main.java.memoranda.models.RefactoredDjkAlgo;
 
 import org.json.JSONObject;
 import org.json.JSONArray;

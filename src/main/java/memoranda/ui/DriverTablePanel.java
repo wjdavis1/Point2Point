@@ -9,11 +9,11 @@ import java.awt.Dimension;
 
 import java.util.HashMap;
 
-import main.java.memoranda.DriverCollection;
+import main.java.memoranda.models.DriverCollection;
 import main.java.interfaces.Driver;
-import main.java.memoranda.DriverImpl;
-import main.java.memoranda.TourCollection;
-import main.java.memoranda.TourImpl;
+import main.java.memoranda.models.DriverImpl;
+import main.java.memoranda.models.TourCollection;
+import main.java.memoranda.models.TourImpl;
 import main.java.memoranda.date.CalendarDate;
 
 public class DriverTablePanel extends JPanel {

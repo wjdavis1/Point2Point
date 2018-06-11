@@ -12,18 +12,15 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 
-import main.java.memoranda.NodeImpl;
-import main.java.memoranda.RouteImpl;
+import main.java.memoranda.models.NodeImpl;
+import main.java.memoranda.models.RouteImpl;
 
-import java.io.File;
 import java.io.FileInputStream;
-import java.io.IOException;
 import java.util.HashSet;
 import java.util.Set;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
-import org.json.JSONTokener;
 
 public class RouteDisplayWindow extends JFrame{
 

@@ -19,6 +19,7 @@ import javax.swing.event.*;
 import javax.swing.tree.*;
 
 import main.java.interfaces.Task;
+import main.java.interfaces.TreeTableModel;
 
 import javax.swing.table.*;
 

@@ -2,28 +2,18 @@ package main.java.memoranda.ui;
 
 import java.awt.Color;
 import java.awt.Dimension;
-import java.awt.Font;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
 import java.util.Vector;
 
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
 import javax.swing.ScrollPaneConstants;
-import javax.swing.table.DefaultTableModel;
-import javax.swing.table.TableColumn;
 import javax.swing.JPanel;
 
-import org.json.JSONObject;
-import org.json.JSONTokener;
-
-import main.java.memoranda.BusImpl;
-import main.java.memoranda.TourCollection;
-import main.java.memoranda.TourImpl;
+import main.java.memoranda.models.BusImpl;
+import main.java.memoranda.models.TourCollection;
+import main.java.memoranda.models.TourImpl;
 import main.java.memoranda.date.CalendarDate;
-import main.java.memoranda.BusCollection;
+import main.java.memoranda.models.BusCollection;
 
 
 

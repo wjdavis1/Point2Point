@@ -4,9 +4,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 
-import main.java.memoranda.DriverImpl;
-import main.java.memoranda.DriverCollection;
-import main.java.memoranda.ui.DriversPanel;
+import main.java.memoranda.models.DriverCollection;
 
 import java.io.IOException;
 

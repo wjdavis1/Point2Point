@@ -34,8 +34,8 @@ import javax.swing.KeyStroke;
 import javax.swing.UIManager;
 import javax.swing.text.html.HTMLDocument;
 
-import main.java.memoranda.CurrentProject;
-import main.java.memoranda.History;
+import main.java.memoranda.models.CurrentProject;
+import main.java.memoranda.models.History;
 import main.java.interfaces.Note;
 import main.java.interfaces.NoteList;
 import main.java.interfaces.Project;

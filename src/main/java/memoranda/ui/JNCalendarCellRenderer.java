@@ -16,8 +16,8 @@ import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 import javax.swing.JTable;
 
-import main.java.memoranda.CurrentProject;
-import main.java.memoranda.EventsManager;
+import main.java.memoranda.models.CurrentProject;
+import main.java.memoranda.models.EventsManager;
 import main.java.interfaces.Task;
 import main.java.memoranda.date.CalendarDate;
 /**

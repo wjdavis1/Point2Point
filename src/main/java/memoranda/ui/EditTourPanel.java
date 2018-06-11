@@ -32,14 +32,14 @@ import java.util.Map;
 import java.util.Vector;
 
 import main.java.memoranda.util.Local;
-import main.java.memoranda.BusCollection;
-import main.java.memoranda.BusImpl;
+import main.java.memoranda.models.BusCollection;
+import main.java.memoranda.models.BusImpl;
 import main.java.interfaces.Driver;
-import main.java.memoranda.DriverCollection;
+import main.java.memoranda.models.DriverCollection;
 import main.java.interfaces.Route;
-import main.java.memoranda.RouteCollection;
-import main.java.memoranda.TourCollection;
-import main.java.memoranda.TourImpl;
+import main.java.memoranda.models.RouteCollection;
+import main.java.memoranda.models.TourCollection;
+import main.java.memoranda.models.TourImpl;
 import javax.swing.JOptionPane;
 public class EditTourPanel extends JDialog {
 	
