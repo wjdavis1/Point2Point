@@ -5,7 +5,7 @@
  * FRANKFURT
  * Interface for Bus Object
  */
-package main.java.memoranda;
+package main.java.interfaces;
 
 import java.sql.Date;
 import java.sql.Time;

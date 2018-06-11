@@ -10,6 +10,7 @@ package main.java.memoranda;
 
 import java.util.Vector;
 
+import main.java.interfaces.Project;
 import main.java.memoranda.date.CalendarDate;
 import main.java.memoranda.util.CurrentStorage;
 import main.java.memoranda.util.Local;

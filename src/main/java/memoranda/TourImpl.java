@@ -8,8 +8,8 @@ package main.java.memoranda;
 + * 
 + */
 
-import main.java.memoranda.date.CalendarDate;
-import java.time.LocalTime;
+import main.java.interfaces.Tour;
+
 import java.io.Serializable;
 
 import org.json.*;

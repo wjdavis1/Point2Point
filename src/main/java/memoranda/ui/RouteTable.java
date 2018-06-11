@@ -7,8 +7,6 @@ package main.java.memoranda.ui;
 */
 import javax.swing.JTable;
 import javax.swing.SwingUtilities;
-import javax.swing.event.ListSelectionEvent;
-import javax.swing.event.ListSelectionListener;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
@@ -22,8 +20,7 @@ import java.awt.Dimension;
 import java.util.HashMap;
 
 import main.java.memoranda.RouteCollection;
-import main.java.memoranda.NodeImpl;
-import main.java.memoranda.Route;
+import main.java.interfaces.Route;
 
 public class RouteTable extends JPanel {
 

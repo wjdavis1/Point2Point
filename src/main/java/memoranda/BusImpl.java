@@ -13,15 +13,13 @@ package main.java.memoranda;
 
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
-import java.io.IOException;
 import java.sql.Date;
 import java.sql.Time;
 import java.util.Vector;
-import org.json.*;
 
-import main.java.memoranda.ui.App;
+import main.java.interfaces.Bus;
+import org.json.*;
 
 public class BusImpl implements Bus {
     
@@ -67,7 +65,7 @@ public class BusImpl implements Bus {
     
 	/*
 	 * (non-Javadoc)
-	 * @see main.java.memoranda.Bus#setName()
+	 * @see main.java.interfaces.Bus#setName()
 	 */
 	public void setName(String name) {
 		this.name = name;
@@ -75,7 +73,7 @@ public class BusImpl implements Bus {
 	
     /*
      * (non-Javadoc)
-     * @see main.java.memoranda.Bus#getname()
+     * @see main.java.interfaces.Bus#getname()
      */
 	public String getName() {
 		
@@ -83,7 +81,7 @@ public class BusImpl implements Bus {
 	}
     
     /*
-     * @see main.java.memoranda.Bus#getNumberOfSeats()
+     * @see main.java.interfaces.Bus#getNumberOfSeats()
      */
     public int getNumberOfSeats() {
         return numberOfSeats;
@@ -91,7 +89,7 @@ public class BusImpl implements Bus {
     
     
     /*
-     * @see main.java.memoranda.Bus#getId()
+     * @see main.java.interfaces.Bus#getId()
      */
     public int getId() {
         
@@ -103,25 +101,25 @@ public class BusImpl implements Bus {
     }
     
     /*
-     * @see main.java.memoranda.Bus#setNumberOfSeats()
+     * @see main.java.interfaces.Bus#setNumberOfSeats()
      */
     public void setNumberOfSeats(int seats) {
         numberOfSeats = seats;
     }
     /*
-     * @see main.java.memoranda.Bus#addToSchedule(java.sql.Date)
+     * @see main.java.interfaces.Bus#addToSchedule(java.sql.Date)
      */
     public void addToSchedule(Date scheduleDate, Time scheduleTime) {
         schedule.add(scheduleDate);
     }
     /*
-     * @see main.java.memoranda.Bus#removeFromSchedule(java.sql.Date)
+     * @see main.java.interfaces.Bus#removeFromSchedule(java.sql.Date)
      */
     public void removeFromSchedule(Date scheduleDate, Time scheduleTime) {
         
     }
     /*
-     * @see main.java.memoranda.Bus#getSchedule()
+     * @see main.java.interfaces.Bus#getSchedule()
      */
     public Vector<Date> getSchedule() {
         
@@ -130,7 +128,7 @@ public class BusImpl implements Bus {
     
     /*
      * (non-Javadoc)
-     * @see main.java.memoranda.Bus#saveBus()
+     * @see main.java.interfaces.Bus#saveBus()
      */
     public void saveBus(int id, String name, int numSeats) {
         JSONObject bus = new JSONObject();
@@ -144,7 +142,7 @@ public class BusImpl implements Bus {
     
 //    /*
 //     * (non-Javadoc)
-//     * @see main.java.memoranda.Bus#readBusData()
+//     * @see main.java.interfaces.Bus#readBusData()
 //     */
 //    public JSONObject readBusData() {
 //        JSONObject bus = null;

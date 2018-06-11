@@ -1,4 +1,4 @@
-package main.java.memoranda;
+package main.java.interfaces;
 /*
  * Author:  Tresor Cyubahiro
  * Description: Interface for Class to hold a node (graphical point) data

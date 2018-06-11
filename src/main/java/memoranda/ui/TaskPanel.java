@@ -26,12 +26,12 @@ import javax.swing.event.ListSelectionListener;
 
 import main.java.memoranda.CurrentProject;
 import main.java.memoranda.History;
-import main.java.memoranda.NoteList;
-import main.java.memoranda.Project;
-import main.java.memoranda.ProjectListener;
-import main.java.memoranda.ResourcesList;
-import main.java.memoranda.Task;
-import main.java.memoranda.TaskList;
+import main.java.interfaces.NoteList;
+import main.java.interfaces.Project;
+import main.java.interfaces.ProjectListener;
+import main.java.interfaces.ResourcesList;
+import main.java.interfaces.Task;
+import main.java.interfaces.TaskList;
 import main.java.memoranda.date.CalendarDate;
 import main.java.memoranda.date.CurrentDate;
 import main.java.memoranda.date.DateListener;

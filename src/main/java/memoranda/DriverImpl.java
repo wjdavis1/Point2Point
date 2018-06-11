@@ -1,6 +1,8 @@
 package main.java.memoranda;
 
 import java.io.Serializable;
+
+import main.java.interfaces.Driver;
 import org.json.JSONObject;
 
 /**

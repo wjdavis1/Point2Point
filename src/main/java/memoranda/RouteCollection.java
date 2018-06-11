@@ -20,7 +20,7 @@ import java.util.Map;
 import java.util.Set;
 import java.util.HashMap;
 
-import main.java.memoranda.RouteImpl;
+import main.java.interfaces.Route;
 import org.json.JSONObject;
 import org.json.JSONTokener;
 

@@ -20,7 +20,7 @@ import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Set;
 
-import main.java.memoranda.NodeImpl;
+import main.java.interfaces.Route;
 
 import org.json.JSONObject;
 import org.json.JSONArray;

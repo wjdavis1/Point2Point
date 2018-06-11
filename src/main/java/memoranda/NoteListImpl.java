@@ -10,6 +10,9 @@ package main.java.memoranda;
 import java.util.Collection;
 import java.util.Vector;
 
+import main.java.interfaces.Note;
+import main.java.interfaces.NoteList;
+import main.java.interfaces.Project;
 import main.java.memoranda.date.CalendarDate;
 import main.java.memoranda.date.CurrentDate;
 import main.java.memoranda.util.Util;
@@ -69,7 +72,7 @@ public class NoteListImpl implements NoteList {
     }
     
     /**
-     * @see main.java.memoranda.NoteList#getMarkedNotes()
+     * @see NoteList#getMarkedNotes()
      */
     public Collection getMarkedNotes() {
         Vector v = new Vector();
@@ -411,7 +414,7 @@ public class NoteListImpl implements NoteList {
 	}
 	
     /**
-     * @see main.java.memoranda.NoteList#getXMLContent()
+     * @see NoteList#getXMLContent()
      */
     public Document getXMLContent() {
         return _doc;

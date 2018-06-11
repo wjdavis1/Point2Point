@@ -1,4 +1,4 @@
-package main.java.memoranda;
+package main.java.interfaces;
 /**
 + * File Name: Tour.java
 + * Description: Provides a simple API for instantiation of of Tour objects and conversion to and from JSONObjects

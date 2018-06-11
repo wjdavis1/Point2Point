@@ -20,6 +20,8 @@ import javax.swing.Action;
 import javax.swing.ImageIcon;
 import javax.swing.KeyStroke;
 
+import main.java.interfaces.HistoryListener;
+import main.java.interfaces.Project;
 import main.java.memoranda.util.Local;
 /**
  * 

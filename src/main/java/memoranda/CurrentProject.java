@@ -13,6 +13,7 @@ import java.awt.event.ActionListener;
 import java.util.Collection;
 import java.util.Vector;
 
+import main.java.interfaces.*;
 import main.java.memoranda.ui.AppFrame;
 import main.java.memoranda.util.Context;
 import main.java.memoranda.util.CurrentStorage;
@@ -45,7 +46,7 @@ public class CurrentProject {
 			// references to missing project
 			_project = ProjectManager.getProject("__default");
 			if (_project == null) 
-				_project = (Project)ProjectManager.getActiveProjects().get(0);						
+				_project = (Project)ProjectManager.getActiveProjects().get(0);
             Context.put("LAST_OPENED_PROJECT_ID", _project.getID());
 			
 		}		
@@ -108,7 +109,7 @@ public class CurrentProject {
     
     private static void notifyListenersAfter() {
         for (int i = 0; i < projectListeners.size(); i++) {
-            ((ProjectListener)projectListeners.get(i)).projectWasChanged();            
+            ((ProjectListener)projectListeners.get(i)).projectWasChanged();
         }
     }
 

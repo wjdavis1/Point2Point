@@ -1,4 +1,4 @@
-package main.java.memoranda;
+package main.java.interfaces;
 
 import org.json.JSONObject;
 

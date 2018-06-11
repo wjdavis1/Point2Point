@@ -1,23 +1,16 @@
 package main.java.memoranda.ui;
 
 import javax.swing.JTable;
-import javax.swing.ScrollPaneConstants;
-import javax.swing.table.AbstractTableModel;
-import javax.swing.table.TableCellRenderer;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 
 import java.awt.GridLayout;
-import java.awt.Color;
 import java.awt.Dimension;
 
 import java.util.HashMap;
-import java.util.LinkedHashSet;
 
 import main.java.memoranda.DriverCollection;
-import main.java.memoranda.BusCollection;
-import main.java.memoranda.BusImpl;
-import main.java.memoranda.Driver;
+import main.java.interfaces.Driver;
 import main.java.memoranda.DriverImpl;
 import main.java.memoranda.TourCollection;
 import main.java.memoranda.TourImpl;

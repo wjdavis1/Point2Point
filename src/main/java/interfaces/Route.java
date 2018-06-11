@@ -1,7 +1,8 @@
-package main.java.memoranda;
+package main.java.interfaces;
 
 import java.util.List;
 
+import main.java.memoranda.NodeImpl;
 import org.json.JSONObject;
 
 /**

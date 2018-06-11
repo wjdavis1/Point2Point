@@ -4,7 +4,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.LinkedList;
 import java.util.Map;
-import java.util.Vector;
 
 /*
  * Author: Tresor Cyubahiro
@@ -12,7 +11,7 @@ import java.util.Vector;
  * Date:  03.20.2018
  * SER 316 - Frankfurt
  */
-import main.java.memoranda.Node;
+import main.java.interfaces.Node;
 import org.json.JSONObject;
 
 public class NodeImpl implements Node {
@@ -54,7 +53,7 @@ public class NodeImpl implements Node {
 	}
 	/*
 	 * (non-Javadoc)
-	 * @see main.java.memoranda.Node#setLat(double)
+	 * @see main.java.interfaces.Node#setLat(double)
 	 */
 	public void setLat(Double lat) {
 		this.lat = lat;
@@ -62,7 +61,7 @@ public class NodeImpl implements Node {
 	
 	/*
 	 * (non-Javadoc)
-	 * @see main.java.memoranda.Node#setLon(double)
+	 * @see main.java.interfaces.Node#setLon(double)
 	 */
 	public void setLon(Double lon) {
 		this.lon = lon;
@@ -70,7 +69,7 @@ public class NodeImpl implements Node {
 	
 	/*
 	 * (non-Javadoc)
-	 * @see main.java.memoranda.Node#setAlias(java.lang.String)
+	 * @see main.java.interfaces.Node#setAlias(java.lang.String)
 	 */
 	public void setAlias(String alias) {
 		this.alias = alias;
@@ -78,7 +77,7 @@ public class NodeImpl implements Node {
 	
 	/*
 	 * (non-Javadoc)
-	 * @see main.java.memoranda.Node#getLat()
+	 * @see main.java.interfaces.Node#getLat()
 	 */
 	public Double getLat() {
 		return this.lat;
@@ -86,7 +85,7 @@ public class NodeImpl implements Node {
 	
 	/*
 	 * (non-Javadoc)
-	 * @see main.java.memoranda.Node#getLon()
+	 * @see main.java.interfaces.Node#getLon()
 	 */
 	public Double getLon() {
 		return this.lon;
@@ -94,7 +93,7 @@ public class NodeImpl implements Node {
 	
 	/*
 	 * (non-Javadoc)
-	 * @see main.java.memoranda.Node#getAlias()
+	 * @see main.java.interfaces.Node#getAlias()
 	 */
 	public String getAlias() {
 		return this.alias;
@@ -102,7 +101,7 @@ public class NodeImpl implements Node {
 	
 	/*
 	 * (non-Javadoc)
-	 * @see main.java.memoranda.Node#distanceTo(main.java.memoranda.Node)
+	 * @see main.java.interfaces.Node#distanceTo(main.java.interfaces.Node)
 	 */
 	
 	

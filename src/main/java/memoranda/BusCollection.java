@@ -11,9 +11,10 @@ package main.java.memoranda;
 + * 
 + */
 
+import main.java.interfaces.Bus;
 import org.json.JSONObject;
 import org.json.JSONTokener;
-import main.java.memoranda.BusImpl;
+
 import java.util.Vector;
 
 import java.io.FileNotFoundException;
