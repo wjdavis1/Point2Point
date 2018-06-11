@@ -654,6 +654,10 @@ public class AppFrame extends JFrame {
         exitListeners.add(al);
     }
 
+    public WorkPanel getWorkPanel(){
+        return this.workPanel;
+    }
+
     private static void exitNotify() {
 
         for(ActionListener listener : exitListeners){
@@ -896,7 +900,4 @@ public class AppFrame extends JFrame {
         }
     }
 
-    public WorkPanel getWorkPanel(){
-        return this.workPanel;
-    }
 }
